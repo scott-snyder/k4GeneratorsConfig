@@ -1,0 +1,8 @@
+Bottom: 5d39c02e46df4404f881ca43de406f443d6e3181
+Top:    5d39c02e46df4404f881ca43de406f443d6e3181
+Author: sss <sss@karma>
+Date:   2025-10-16 14:39:12 -0400
+
+Fix a clang warning.
+
+Unused private data members.
