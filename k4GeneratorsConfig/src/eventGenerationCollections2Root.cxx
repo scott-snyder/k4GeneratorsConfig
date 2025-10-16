@@ -1,5 +1,6 @@
 #include "eventGenerationCollections2Root.h"
 #include <sstream>
+#include <cmath>
 
 #include "TCanvas.h"
 #include "TGaxis.h"
@@ -344,7 +345,7 @@ void k4GeneratorsConfig::eventGenerationCollections2Root::writeXsectionGraphs() 
             int isqrtsPoint = -1;
             for (int iPoint = 0; iPoint < m_xsectionGraphs[indexProcGen]->GetN(); iPoint++) {
               double sqrts = m_xsectionGraphs[indexProcGen]->GetPointX(iPoint);
-              if (abs(sqrts - m_sqrtsList[isqrts]) / sqrts < m_sqrtsPrecision) {
+              if (std::abs(sqrts - m_sqrtsList[isqrts]) / sqrts < m_sqrtsPrecision) {
                 isqrtsPoint = iPoint;
               }
             }
