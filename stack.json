@@ -1,10 +1,11 @@
 {
   "version": 5,
-  "prev": "be42371e4ab6b0f879f7d7976ffd751902297f0f",
-  "head": "17c73756cbeb1b9ffa27d4a34518e089ecd93827",
+  "prev": "8f2c459d7847fd22ce0e8cd7687bf5f2611f9bca",
+  "head": "b37de368da3a542f45b8c205b18ef67566ab75b2",
   "applied": [
     "abs",
-    "clangwarn"
+    "clangwarn",
+    "danglewarn"
   ],
   "unapplied": [],
   "hidden": [],
@@ -14,6 +15,9 @@
     },
     "clangwarn": {
       "oid": "17c73756cbeb1b9ffa27d4a34518e089ecd93827"
+    },
+    "danglewarn": {
+      "oid": "b37de368da3a542f45b8c205b18ef67566ab75b2"
     }
   }
 }
