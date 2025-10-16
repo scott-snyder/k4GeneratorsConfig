@@ -77,7 +77,6 @@ private:
   std::ofstream m_file;                          //!< Output file
   std::shared_ptr<std::ostream> m_shared_stream; ///< Output temp. stream
   std::ostream* m_stream;                        //!< Output stream
-  unsigned long m_particle_counter;              //!< Used to set bar codes
 
   bool m_edm4hepWriterClosed;
   podio::ROOTWriter m_edm4hepWriter;
