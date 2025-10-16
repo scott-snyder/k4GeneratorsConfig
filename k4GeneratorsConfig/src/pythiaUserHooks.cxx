@@ -1,6 +1,7 @@
 // std
 #include <fstream>
 #include <iostream>
+#include <cmath>
 
 // k4GeneratorsConfig
 #include "pythiaUserHooks.h"
@@ -176,14 +177,14 @@ bool pythiaUserHooks::Veto2ParticleSelector(double energy1, double px1, double p
       } else if (m_Type[i].find("Angle") != std::string::npos) {
         value = Angle(px1, py1, pz1, px2, py2, pz2);
       } else if (m_Type[i].find("DeltaEta") != std::string::npos) {
-        value = abs(Eta(px1, py1, pz1) - Eta(px2, py2, pz2));
+        value = std::abs(Eta(px1, py1, pz1) - Eta(px2, py2, pz2));
       } else if (m_Type[i].find("DeltaY") != std::string::npos) {
-        value = abs(Rapidity(energy1, pz1) - Rapidity(energy2, pz2));
+        value = std::abs(Rapidity(energy1, pz1) - Rapidity(energy2, pz2));
       } else if (m_Type[i].find("DeltaPhi") != std::string::npos) {
         value = Angle(px1, py1, 0., px2, py2, 0.);
       } else if (m_Type[i].find("DeltaR") != std::string::npos) {
         double deltaPhi = Angle(px1, py1, 0., px2, py2, 0.);
-        double deltaEta = abs(Eta(px1, py1, pz1) - Eta(px2, py2, pz2));
+        double deltaEta = std::abs(Eta(px1, py1, pz1) - Eta(px2, py2, pz2));
         value = sqrt(deltaPhi * deltaPhi + deltaEta * deltaEta);
       }
       // now we have the value, we need the comparator
