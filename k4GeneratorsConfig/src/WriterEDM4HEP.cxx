@@ -32,7 +32,7 @@
 namespace HepMC3 {
 
 WriterEDM4HEP::WriterEDM4HEP(const std::string& filename, std::shared_ptr<GenRunInfo> run)
-    : m_file(filename), m_stream(&m_file), m_particle_counter(0), m_edm4hepWriterClosed(false),
+    : m_file(filename), m_stream(&m_file), m_edm4hepWriterClosed(false),
       m_edm4hepWriter(filename) {
   //  HEPMC3_WARNING("WriterEDM4HEP::WriterEDM4HEP: the conversion to EDM4HEP is still being developed")
   set_run_info(run);
@@ -44,7 +44,7 @@ WriterEDM4HEP::WriterEDM4HEP(const std::string& filename, std::shared_ptr<GenRun
 }
 
 WriterEDM4HEP::WriterEDM4HEP(std::ostream& stream, std::shared_ptr<GenRunInfo> run)
-    : m_stream(&stream), m_particle_counter(0), m_edm4hepWriterClosed(false), m_edm4hepWriter("") {
+    : m_stream(&stream), m_edm4hepWriterClosed(false), m_edm4hepWriter("") {
   HEPMC3_WARNING(
       "WriterEDM4HEP::WriterEDM4HEP: HepMC2 IO_GenEvent format is outdated. Please use HepMC3 Asciiv3 format instead.")
   set_run_info(run);
@@ -55,7 +55,7 @@ WriterEDM4HEP::WriterEDM4HEP(std::ostream& stream, std::shared_ptr<GenRunInfo> r
 }
 
 WriterEDM4HEP::WriterEDM4HEP(std::shared_ptr<std::ostream> s_stream, std::shared_ptr<GenRunInfo> run)
-    : m_shared_stream(s_stream), m_stream(s_stream.get()), m_particle_counter(0), m_edm4hepWriterClosed(false),
+    : m_shared_stream(s_stream), m_stream(s_stream.get()), m_edm4hepWriterClosed(false),
       m_edm4hepWriter("") {
   HEPMC3_WARNING(
       "WriterEDM4HEP::WriterEDM4HEP: HepMC2 IO_GenEvent format is outdated. Please use HepMC3 Asciiv3 format instead.")
