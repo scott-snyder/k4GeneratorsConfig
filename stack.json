@@ -1,23 +1,23 @@
 {
   "version": 5,
-  "prev": "6a30a214829a85a8ac57c6b7887876672be6dc40",
-  "head": "b3081d109eb1f468d9d115dcaf1cc234e548fead",
-  "applied": [],
-  "unapplied": [
+  "prev": "21e944cd97bcc129beab088ed8e4a632dd6840ff",
+  "head": "a725592ed4075bc67b288c2c43bfce6006317b75",
+  "applied": [
     "abs",
     "clangwarn",
     "danglewarn"
   ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "abs": {
-      "oid": "07765df1e41630bd25dc5b8f4002878e7298eea5"
+      "oid": "7445e4d13fc60c3bf53b6120ca8c3608f2313b86"
     },
     "clangwarn": {
-      "oid": "9585b2273fda9b0f055d68c14b12bbcf22dfcf6d"
+      "oid": "865d302cd132b78656fee6dc8792306a42096355"
     },
     "danglewarn": {
-      "oid": "78cd5f681d62ed5df59a5420e2a6ee01d5dfe3b8"
+      "oid": "a725592ed4075bc67b288c2c43bfce6006317b75"
     }
   }
 }
