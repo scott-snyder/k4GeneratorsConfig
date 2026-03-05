@@ -1,11 +1,10 @@
 {
   "version": 5,
-  "prev": "864c20088df1a29cab71e9fea18fb9b5b240c220",
-  "head": "a2b974d067c76dad618a9bfc6c100cd0ee7a51a8",
+  "prev": "30b7ae1d62f8861e8d8cb3ebb4a84e1e5c7c911f",
+  "head": "73e6af66825e94dd0f14c26d5ec3c0f0b3b9cdd7",
   "applied": [
     "abs",
-    "clangwarn",
-    "cxx26"
+    "clangwarn"
   ],
   "unapplied": [],
   "hidden": [],
@@ -15,9 +14,6 @@
     },
     "clangwarn": {
       "oid": "73e6af66825e94dd0f14c26d5ec3c0f0b3b9cdd7"
-    },
-    "cxx26": {
-      "oid": "a2b974d067c76dad618a9bfc6c100cd0ee7a51a8"
     }
   }
 }
